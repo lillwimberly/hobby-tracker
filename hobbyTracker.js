@@ -30,8 +30,8 @@ function longSessions(log, minMinutes) {
 // It then executes the filter method on the input 'log' array. It accepts a callback function which it then executes on every element of the 'log' array.
 // the filter method returns a new array populated with the 'log' elements that passed this conditional test.
 function countMood(log, moodType) {
-  return log.filter(entry => entry.mood === moodType).length; // it checks if the value at the elements's mood property are strictly equal to the value of 'moodType'. 
-  // then return the length of the returned array from the filter method. or in other words, the number of sessions at the input moodType.
+  return log.filter(entry => entry.mood === moodType).length; // it checks if the value at the elementss mood property is strictly equal to the value of 'moodType'. 
+  // then return the length of the returned array from the filter method, or in other words, the number of sessions at the input moodType.
 }
 
 console.log("Total time spent:", totalTime(hobbyLog), "minutes");
